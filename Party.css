@@ -1,0 +1,163 @@
+@charset "UTF-8";
+html
+{
+  /*font-size:100%;*/
+}
+
+header
+{
+  /*background-image: linear-gradient(#c9ffbf,#ffafbd);
+  min-height: 50vh;*/
+}
+
+nav.taiman
+{
+  white-space: nowrap;
+  font-size:24px;
+  font-family:"sans-serif","HGS創英角ﾎﾟｯﾌﾟ体";
+  text-align:center;
+  flex-direction: column;
+  /*height: 50%;*/
+  width: 100%;
+  display:block;
+  display: inline;
+  max-height: 300px;
+  list-style: none;
+
+}
+
+div.teiman
+{
+  margin:0px 4em 0px 4em;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+  padding:1em;
+  padding-top:0;
+  padding-bottom:0;
+  /*background-color:white;*/
+  background-image: linear-gradient(#c9ffbf,#00a0dc);
+  border-radius:100px;
+  /*margin-left:5em;
+  margin-right:5em;*/
+}
+p.taiman
+{
+  font-size:1vw;
+  border: 2px solid #b84c00;
+  width:auto;
+  background-image: linear-gradient(white,yellow);
+  background-color:white;
+  border-radius:30px;
+  padding:0.5em;
+}
+div.frame img
+{
+  border-radius:10px;
+  text-align:center;
+}
+
+body
+{
+  background-image:url(haikei.jpg);
+  background-attachment: fixed;
+  /*"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;*/
+  line-height: 3;
+  text-align:center;
+  list-style: none;
+  margin:0px;
+}
+
+h1
+{
+  text-align:center;
+  font-family:"sans-serif","HGS創英角ﾎﾟｯﾌﾟ体";
+  font-size: 40px;
+}
+
+h2
+{
+  text-align:center;
+  font-family:"sans-serif","HGS創英角ﾎﾟｯﾌﾟ体";
+}
+
+a
+{
+  text-decoration:none;
+  color:blue;
+}
+a:hover
+{
+  color:red;
+}
+a:active
+{
+  color:red;
+}
+pre
+{
+  font-family:"sans-serif","HGS創英角ﾎﾟｯﾌﾟ体";
+  font-size:20px;
+}
+
+p.buri img
+{
+  font-size:100px;
+  width:50px;
+  text-align:center;
+}
+
+p.syake img
+{
+  position:center;
+  margin-top:100px;
+  width:200px;
+  text-align:center;
+}
+
+div
+{
+  margin-top:50px;
+}
+ul.listjya
+{
+  list-style: none;
+  text-align:center;
+}
+a.icon img
+{
+  width:30px;
+}
+div.irasuto img
+{
+  width:500px;
+}
+footer
+{
+  display: grid;
+  background-image: linear-gradient(#c9ffbf,#00a0dc);
+  margin:0px;
+}
+pre.saisyugyou
+{
+  margin-bottom:300px;
+}
+div.media
+{
+  margin-right:50px;
+  text-align:right;
+}
+div.TOITTA
+{
+  text-align:center;
+  bottom:0px;
+  display:inline-block;
+}
+p.copilight
+{
+  text-align:center;
+  margin-bottom:300px;
+}
+h1.TWCL
+{
+  color:#00AEEF;
+}
