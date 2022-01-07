@@ -1,3 +1,6 @@
+//作成社　田中　
+//文字通りスタミナ用のスクリプトである。
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +23,7 @@ public class sutaminaBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slider = GameObject.Find("Slider").GetComponent<Slider>();
+        //slider = GameObject.Find("Slider").GetComponent<Slider>();
         animator = GetComponent<Animator>();
         //uiscript = GameObject.Find("Canvas").GetComponent<UIScript>();
     }
@@ -52,8 +55,8 @@ public class sutaminaBar : MonoBehaviour
             cooltime = Time.time;//スタミナがなくなった瞬間の時間を取得
         }
 
-        //スタミナがなくなって3秒以上経過した時の処理
-        if (nowtime - cooltime >= 3 && this.ShiftArrowFlag == false)
+        //スタミナがなくなって5秒以上経過した時の処理
+        if (nowtime - cooltime >= 5 && this.ShiftArrowFlag == false)
         {
             speed = 1f;
             this.ShiftArrowFlag = true;//Shiftを押下可能にする

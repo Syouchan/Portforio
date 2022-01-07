@@ -5,10 +5,8 @@ using UnityEngine.UI;
 public class TimerScript : MonoBehaviour
 {
 
-	[SerializeField]
-	private int minute;
-	[SerializeField]
-	private float seconds;
+	[SerializeField]private int minute;
+	[SerializeField]private float seconds;
 	//　前のUpdateの時の秒数
 	private float oldSeconds;
 	//　タイマー表示用テキスト

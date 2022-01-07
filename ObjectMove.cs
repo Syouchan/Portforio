@@ -2,30 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-
-public class Spin : MonoBehaviour
+public class ObjectMove : MonoBehaviour
 {
     public GameObject move;
+
     float nowtime;
     float start_time;
     public float speed;
     public float time;
     bool turn = false;
-    public float m_rotateSpeed = 50;
-    public Rigidbody m_rigidbody = null;
-    private float m_angle;
-
-    private void Reset()
-    {
-        m_rigidbody = GetComponent<Rigidbody>();
-        m_rigidbody.isKinematic = true;
-    }
+    // Start is called before the first frame update
     void Start()
     {
         start_time = Time.time;
     }
 
+    // Update is called once per frame
     void Update()
     {
         nowtime = Time.time;
@@ -37,7 +29,8 @@ public class Spin : MonoBehaviour
         }
         else if (turn)
         {
-            transform.Translate(-speed, 0, 0);
+            transform.Translate(0, speed, 0);
+            //move.transform.position = new Vector3(move.transform.position.x, move.transform.position.y, move.transform.position.z + speed);
             if (nowtime - start_time > time)
             {
                 start_time = Time.time;
@@ -46,12 +39,10 @@ public class Spin : MonoBehaviour
         }
         else if (nowtime - start_time < time && turn == false)
         {
-            transform.Translate(speed, 0, 0);
+            transform.Translate(0, -speed, 0);
+            //move.transform.position = new Vector3(move.transform.position.x, move.transform.position.y, move.transform.position.z - speed);
         }
-        {
-            m_angle += m_rotateSpeed * Time.deltaTime;
-            var rotation = Quaternion.Euler(0, m_angle, 0);
-            m_rigidbody.MoveRotation(rotation);
-        }
+
     }
+
 }
